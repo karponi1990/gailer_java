@@ -6,60 +6,58 @@ class HalloObjektEingabe {
 
     String mitteilung;
 
-    HalloObjektEingabe( String str ){
+    HalloObjektEingabe(String str) {
         mitteilung = str;
     }
-  
-    void sprich(){
-        System.out.println( mitteilung );
+
+    void sprich() {
+        System.out.println(mitteilung);
     }
 }
 
-class HalloTester3{
-    public static void main ( String[] args )
-    {
+class HalloTester3 {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-  
+
         System.out.println("Geben Sie eine Mitteilung ein: ");
         String eingabe = scan.nextLine();
 
         HalloObjektEingabe einObjekt = new HalloObjektEingabe(eingabe);
-  
+
         einObjekt.sprich();
-  
+
         scan.close();
     }
 }
 
-//#endregion
+// #endregion
 
-
-//#region Eingabe Variante 2
+// #region Eingabe Variante 2
 // class HalloObjektEingabe {
 
-//     String mitteilung;
+// String mitteilung;
 
-//     HalloObjektEingabe(){
+// HalloObjektEingabe(){
 
-//         Scanner scan = new Scanner(System.in);
-//         System.out.println("Geben Sie eine Mitteilung ein: ");
-//         String eingabe = scan.nextLine();
+// Scanner scan = new Scanner(System.in);
+// System.out.println("Geben Sie eine Mitteilung ein: ");
+// String eingabe = scan.nextLine();
 
-//         mitteilung = eingabe;
+// mitteilung = eingabe;
 
-//         scan.close();
-//     }
-  
-//     void sprich(){
-//         System.out.println( mitteilung );
-//     }
+// scan.close();
+// }
+
+// void sprich(){
+// System.out.println( mitteilung );
+// }
 // }
 
 // class HalloTester3{
-//     public static void main ( String[] args )
-//     {
-//         HalloObjektEingabe einObjekt = new HalloObjektEingabe();
-//         einObjekt.sprich();
-//     }
+// public static void main ( String[] args )
+// {
+// HalloObjektEingabe einObjekt = new HalloObjektEingabe();
+// einObjekt.sprich();
 // }
-//#endregion
+// }
+// #endregion

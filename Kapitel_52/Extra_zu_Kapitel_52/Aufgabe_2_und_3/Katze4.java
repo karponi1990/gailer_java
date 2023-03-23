@@ -1,12 +1,11 @@
-class Katze4 extends Haustiere4{
-    
-    String haltung;
-    
+class Katze4 extends Haustiere4 {
 
-    Katze4(String name, double futtervorrat, int haltung, double gewicht){
+    String haltung;
+
+    Katze4(String name, double futtervorrat, int haltung, double gewicht) {
 
         super(name, futtervorrat, gewicht);
-        switch(haltung){
+        switch (haltung) {
             case 1:
                 this.haltung = "Wohnungskatze";
                 break;
@@ -15,8 +14,8 @@ class Katze4 extends Haustiere4{
                 break;
         }
     }
-    
-    public void friss(){
+
+    public void friss() {
 
         futtervorrat -= 0.5;
     }

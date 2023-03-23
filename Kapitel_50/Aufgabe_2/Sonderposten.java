@@ -1,5 +1,5 @@
-class Sonderposten extends Artikel2{
-    
+class Sonderposten extends Artikel2 {
+
     private double rabatt;
 
     public Sonderposten(String artikelNr, String bezeichnung, double einkaufspreis, int lagerzeit) {
@@ -16,7 +16,7 @@ class Sonderposten extends Artikel2{
     public void anzeigen() {
 
         super.anzeigen();
-        System.out.printf("(VK <alt>: " + berechneVerkaufspreis() + " Euro Rabatt: "+ rabatt * 100 + ")\n");
+        System.out.printf("(VK <alt>: " + berechneVerkaufspreis() + " Euro Rabatt: " + rabatt * 100 + ")\n");
 
     }
 

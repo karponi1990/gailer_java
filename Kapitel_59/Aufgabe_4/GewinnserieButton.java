@@ -3,12 +3,12 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
 
-public class GewinnserieButton extends JFrame implements ActionListener{
-    
+public class GewinnserieButton extends JFrame implements ActionListener {
+
     JButton ersterButton, zweiterButton, dritterButton;
     Random rnd = new Random();
 
-    GewinnserieButton(String titel){
+    GewinnserieButton(String titel) {
 
         super(titel);
         ersterButton = new JButton("Spiel!");
@@ -28,7 +28,7 @@ public class GewinnserieButton extends JFrame implements ActionListener{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    public void actionPerformed(ActionEvent evt){
+    public void actionPerformed(ActionEvent evt) {
 
         int zufallszahl = rnd.nextInt(3);
 
@@ -38,9 +38,9 @@ public class GewinnserieButton extends JFrame implements ActionListener{
 
         if (zufallszahl == 0) {
             getContentPane().setBackground(randomColor);
-        } else if(zufallszahl == 1){
+        } else if (zufallszahl == 1) {
             getContentPane().setBackground(randomColor);
-        }else{
+        } else {
             System.exit(0);
         }
 

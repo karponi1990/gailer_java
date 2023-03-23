@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class Scheckgebuehr {
     public static void main(String[] args) {
-        
+
         double girokonto, sparkonto;
         Scanner scan = new Scanner(System.in);
 

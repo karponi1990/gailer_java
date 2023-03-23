@@ -28,7 +28,7 @@ class NonFettKalkulator {
         } else {
             System.out.println("Packung B ist preiswerter");
         }
-        
+
         scan.close();
     }
 }

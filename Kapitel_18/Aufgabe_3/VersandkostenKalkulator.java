@@ -12,7 +12,7 @@ class VersandkostenKalkulator {
 
             System.out.print("Gewicht der Sendung: ");
             int gewicht = scan.nextInt();
-            
+
             if (gewicht <= 0) {
                 System.out.println("Bye");
                 break;
@@ -23,7 +23,7 @@ class VersandkostenKalkulator {
                 double aufpreis = diffGewicht * 0.25;
 
                 System.out.println("Versandkosten: $" + (VERSANDKOSTEN + aufpreis));
-            }else{
+            } else {
                 System.out.println("Versandkosten: $" + VERSANDKOSTEN);
             }
         }

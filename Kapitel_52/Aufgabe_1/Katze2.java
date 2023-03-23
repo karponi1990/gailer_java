@@ -1,12 +1,12 @@
-class Katze2 extends Haustiere2{
-    
+class Katze2 extends Haustiere2 {
+
     String haltung;
 
-    Katze2(String name, double futtervorrat, int haltung){
+    Katze2(String name, double futtervorrat, int haltung) {
 
         super(name, futtervorrat);
 
-        switch(haltung){
+        switch (haltung) {
             case 1:
                 this.haltung = "Wohnung";
                 break;
@@ -16,18 +16,18 @@ class Katze2 extends Haustiere2{
         }
     }
 
-    public void sprich(){
+    public void sprich() {
 
         System.out.println("Miau!");
     }
 
-    public void friss(){
+    public void friss() {
 
         System.out.println(name + ": " + futtervorrat);
         futtervorrat -= 0.5;
     }
 
-    public void anzeigen(){
+    public void anzeigen() {
         System.out.println("(Haltung: " + haltung + ") Der Vorrat fuer " + name + " reicht " + anzahlTage + " Tage.\n");
     }
 }

@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class EffizientDampfmaschinen {
     public static void main(String[] args) {
-        
+
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Geben Sie die Lufttemperatur ein: ");
@@ -15,9 +15,9 @@ class EffizientDampfmaschinen {
 
         double effizienz;
 
-        if(dampftemp < 373.0){
+        if (dampftemp < 373.0) {
             effizienz = 0;
-        }else{
+        } else {
             effizienz = 1 - lufttemp / dampftemp;
         }
 

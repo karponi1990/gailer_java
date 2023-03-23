@@ -7,7 +7,7 @@ class IntegerNAddieren {
 
         System.out.print("Geben Sie n ein: ");
         int n = scan.nextInt();
-        
+
         double summe = 0.0;
         int i = 1;
 

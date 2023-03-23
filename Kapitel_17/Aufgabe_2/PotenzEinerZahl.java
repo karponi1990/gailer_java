@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 class PotenzEinerZahl {
     public static void main(String[] args) {
-        
+
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Geben Sie x ein: ");
         double x = scan.nextDouble();
         System.out.print("Geben Sie n ein: ");
         int n = scan.nextInt();
-        
+
         scan.close();
 
         if (n < 0) {

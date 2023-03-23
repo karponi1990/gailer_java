@@ -1,33 +1,32 @@
 import java.util.Scanner;
 
-class Auto
-{
-  double startMeilen;   
-  double endMeilen;     
-  double gallonen;  
-  
-  boolean benzinschwein(){
+class Auto {
+  double startMeilen;
+  double endMeilen;
+  double gallonen;
+
+  boolean benzinschwein() {
     return berechneMPG() < 15.0;
   }
 
-  boolean sparauto(){
+  boolean sparauto() {
     return berechneMPG() > 30.0;
   }
 
-  Auto(  double startTacho, double endTacho, double galls  ){
+  Auto(double startTacho, double endTacho, double galls) {
     startMeilen = startTacho;
-    endMeilen   = endTacho;
-    gallonen    = galls;
+    endMeilen = endTacho;
+    gallonen = galls;
   }
 
-  double berechneMPG(){
-    return (endMeilen - startMeilen) / gallonen ;
+  double berechneMPG() {
+    return (endMeilen - startMeilen) / gallonen;
   }
 
 }
 
-class MeilenProGalloneTester1{
-  public static void main( String[] args ){
+class MeilenProGalloneTester1 {
+  public static void main(String[] args) {
 
     Scanner scan = new Scanner(System.in);
 
@@ -42,14 +41,14 @@ class MeilenProGalloneTester1{
 
     Auto auto = new Auto(startTacho, endTacho, galls);
 
-    System.out.println( "Meilen pro Gallonen: " + auto.berechneMPG() );
+    System.out.println("Meilen pro Gallonen: " + auto.berechneMPG());
 
     if (auto.benzinschwein()) {
-        System.out.println("Benzinschwein!");
+      System.out.println("Benzinschwein!");
     } else if (auto.sparauto()) {
-        System.out.println("Sparauto!");
+      System.out.println("Sparauto!");
     } else {
-        System.out.println("Durchschnittsauto!");
+      System.out.println("Durchschnittsauto!");
     }
 
     scan.close();

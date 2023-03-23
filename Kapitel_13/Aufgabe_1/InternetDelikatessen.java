@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class InternetDelikatessen {
     public static void main(String[] args) {
-        
+
         double versand = 0.0;
 
         Scanner scan = new Scanner(System.in);
@@ -18,13 +18,13 @@ class InternetDelikatessen {
 
         scan.close();
 
-        if(express == 1){
+        if (express == 1) {
             versand = 5.0;
         }
 
-        if(preis < 10.0){
+        if (preis < 10.0) {
             versand = versand + 2.0;
-        }else{
+        } else {
             versand = versand + 3.0;
         }
 

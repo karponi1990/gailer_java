@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class FlaecheVonRechtecken {
     public static void main(String[] args) {
-        
+
         Scanner scan = new Scanner(System.in);
 
         int x1, y1, x2, y2;

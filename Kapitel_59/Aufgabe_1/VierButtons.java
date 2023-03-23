@@ -2,11 +2,11 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class VierButtons extends JFrame implements ActionListener{
-    
+public class VierButtons extends JFrame implements ActionListener {
+
     JButton rotButton, gruenButton, blauButton, grauButton;
 
-    VierButtons(String titel){
+    VierButtons(String titel) {
 
         super(titel);
         rotButton = new JButton("Rot");
@@ -27,16 +27,16 @@ public class VierButtons extends JFrame implements ActionListener{
         grauButton.setActionCommand("grau");
 
         rotButton.addActionListener(this);
-        gruenButton.addActionListener(this); 
+        gruenButton.addActionListener(this);
         blauButton.addActionListener(this);
         grauButton.addActionListener(this);
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    public void actionPerformed(ActionEvent evt){
+    public void actionPerformed(ActionEvent evt) {
 
-        switch(evt.getActionCommand()){
+        switch (evt.getActionCommand()) {
             case "rot":
                 getContentPane().setBackground(Color.red);
                 break;

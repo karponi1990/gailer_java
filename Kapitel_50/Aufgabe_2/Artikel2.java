@@ -8,7 +8,6 @@ class Artikel2 {
     private double einkaufspreis;
     private int lagerzeit;
 
-
     public Artikel2(String artikelNr, String bezeichnung, double einkaufspreis, int lagerzeit) {
 
         this.artikelNr = artikelNr;
@@ -23,8 +22,9 @@ class Artikel2 {
         return verkaufspreis;
     }
 
-    public void anzeigen(){
+    public void anzeigen() {
 
-        System.out.println(artikelNr + " '" + bezeichnung + "' EK: " + einkaufspreis + " VK: " + berechneVerkaufspreis() + " EURO Lagerzeit: " + lagerzeit);
+        System.out.println(artikelNr + " '" + bezeichnung + "' EK: " + einkaufspreis + " VK: " + berechneVerkaufspreis()
+                + " EURO Lagerzeit: " + lagerzeit);
     }
 }

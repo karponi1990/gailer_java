@@ -11,11 +11,11 @@ class CharAt {
 
         int strLaenge = eingabe.length();
 
-        for(int i = 0; i < strLaenge; i++){
+        for (int i = 0; i < strLaenge; i++) {
 
             System.out.println(eingabe.charAt(i));
         }
-        
+
         scan.close();
     }
 }

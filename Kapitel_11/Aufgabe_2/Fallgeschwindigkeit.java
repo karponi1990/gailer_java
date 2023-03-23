@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class Fallgeschwindigkeit {
     public static void main(String[] args) {
-        
+
         double g = 9.81;
         double meter;
 

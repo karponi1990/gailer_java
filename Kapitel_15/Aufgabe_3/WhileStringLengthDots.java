@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class WhileStringLengthDots {
     public static void main(String[] args) {
-        
+
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Geben Sie das erste Wort ein: ");
@@ -17,7 +17,7 @@ class WhileStringLengthDots {
 
         int i = 1;
 
-        while(i <= punkteZahl){
+        while (i <= punkteZahl) {
             System.out.print(".");
             i++;
         }
