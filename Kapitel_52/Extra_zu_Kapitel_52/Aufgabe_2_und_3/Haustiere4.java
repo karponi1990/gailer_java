@@ -25,8 +25,13 @@ abstract class Haustiere4 implements Comparable<Haustiere4> {
 
     public int compareTo(Haustiere4 obj) {
 
-        return Double.compare(this.gewicht, obj.gewicht);
         // return String.CASE_INSENSITIVE_ORDER.compare(this.name, obj.name);
+        //return Double.compare(this.gewicht, obj.gewicht);
+
+        //return this.name.compareToIgnoreCase(obj.name); //Seidel lösung
+        if (this.gewicht < obj.gewicht) return -1;        //Seidel lösung
+        else if (this.gewicht > obj.gewicht) return +1;
+        else return 0;
     }
 
     public void anzeigen() {
