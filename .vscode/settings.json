@@ -14,6 +14,11 @@
         "Kapitel_8/Aufgabe_3",
         "Kapitel_8/Aufgabe_2",
         "Kapitel_8/Aufgabe_1",
+        "Kapitel_61/Aufgabe_4",
+        "Kapitel_61/Aufgabe_3",
+        "Kapitel_61/Aufgabe_2",
+        "Kapitel_61/Aufgabe_1",
+        "Kapitel_60/Aufgabe_4",
         "Kapitel_60/Aufgabe_3",
         "Kapitel_60/Aufgabe_2",
         "Kapitel_60/Aufgabe_1",
@@ -24,6 +29,8 @@
         "Kapitel_59/Aufgabe_2",
         "Kapitel_59/Aufgabe_1",
         "Kapitel_53/Aufgabe_1",
+        "Kapitel_52/Extra_zu_Kapitel_52/Aufgabe_2",
+        "Kapitel_52/Extra_zu_Kapitel_52/Aufgabe_1",
         "Kapitel_52/Aufgabe_1",
         "Kapitel_51/Aufgabe_2",
         "Kapitel_51/Aufgabe_1",
@@ -90,7 +97,7 @@
         "Kapitel_10/Aufgabe_3",
         "Kapitel_10/Aufgabe_2",
         "Kapitel_10/Aufgabe_1",
-        "Kapitel_60/Aufgabe_4"
+        "Kapitel_52/Extra_zu_Kapitel_52/Aufgabe_2_und_3"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
