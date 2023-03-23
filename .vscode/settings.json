@@ -14,6 +14,10 @@
         "Kapitel_8/Aufgabe_3",
         "Kapitel_8/Aufgabe_2",
         "Kapitel_8/Aufgabe_1",
+        "Kapitel_60/Aufgabe_3",
+        "Kapitel_60/Aufgabe_2",
+        "Kapitel_60/Aufgabe_1",
+        "Kapitel_59/Aufgabe_6",
         "Kapitel_59/Aufgabe_5",
         "Kapitel_59/Aufgabe_4",
         "Kapitel_59/Aufgabe_3",
@@ -86,7 +90,7 @@
         "Kapitel_10/Aufgabe_3",
         "Kapitel_10/Aufgabe_2",
         "Kapitel_10/Aufgabe_1",
-        "Kapitel_59/Aufgabe_6"
+        "Kapitel_60/Aufgabe_4"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
