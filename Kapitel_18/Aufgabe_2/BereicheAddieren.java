@@ -20,18 +20,18 @@ class BereicheAddieren {
 
             System.out.print("Daten eingeben: ");
             int wert = scan.nextInt();
-            
+
             if (wert == 0) {
                 break;
             }
 
             if (wert > uGrenze && wert < oGrenze) {
                 summeInGrenze = summeInGrenze + wert;
-            }else{
+            } else {
                 summeAusGrenze = summeAusGrenze + wert;
             }
         }
-        
+
         System.out.println("Summe der Werte innerhalb des Bereiches: " + summeInGrenze);
         System.out.println("Summe der Werte außerhalb des Bereiches: " + summeAusGrenze);
 

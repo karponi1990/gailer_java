@@ -1,20 +1,20 @@
 abstract class Haustiere2 {
-    
+
     String name;
     double futtervorrat;
     int anzahlTage;
 
-    Haustiere2(String name, double futtervorrat){
+    Haustiere2(String name, double futtervorrat) {
 
         this.name = name;
         this.futtervorrat = futtervorrat;
     }
 
-    public void fuettern(){
+    public void fuettern() {
 
         sprich();
 
-        while(futtervorrat > 0.0){
+        while (futtervorrat > 0.0) {
 
             friss();
             anzahlTage++;
@@ -24,6 +24,8 @@ abstract class Haustiere2 {
     }
 
     abstract public void anzeigen();
+
     public abstract void sprich();
+
     public abstract void friss();
 }

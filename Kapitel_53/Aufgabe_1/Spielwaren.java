@@ -1,20 +1,20 @@
-class Spielwaren extends Waren implements Besteuerbar{
-    
+class Spielwaren extends Waren implements Besteuerbar {
+
     int mindestalter;
 
-    Spielwaren(String beschreibung, double preis, int mindestalter, int anzahl){
+    Spielwaren(String beschreibung, double preis, int mindestalter, int anzahl) {
 
         super(beschreibung, preis, anzahl);
         this.mindestalter = mindestalter;
     }
 
-    void anzeigen(){
+    void anzeigen() {
 
         super.anzeigen();
         System.out.println("Mindestalter: " + mindestalter);
     }
 
-    public double berechneSteuer(){
+    public double berechneSteuer() {
 
         return getPreis() * STEUERSATZ;
     }

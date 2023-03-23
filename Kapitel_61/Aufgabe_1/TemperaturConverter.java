@@ -2,8 +2,8 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-class TemperaturConverter extends JFrame implements ActionListener{
-    
+class TemperaturConverter extends JFrame implements ActionListener {
+
     JLabel infoLab = new JLabel("Convert Celsius to Fahrenheit");
     JLabel fahrLab = new JLabel("Fahrenheit");
     JLabel celsLab = new JLabel("Celsius   ");
@@ -13,7 +13,7 @@ class TemperaturConverter extends JFrame implements ActionListener{
     int fahrTemp;
     int celsTemp;
 
-    TemperaturConverter(String titel){
+    TemperaturConverter(String titel) {
 
         super(titel);
 
@@ -26,20 +26,20 @@ class TemperaturConverter extends JFrame implements ActionListener{
         add(fahrLab);
         add(fahrTxt);
 
-        celsTxt.addActionListener( this );
-        setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
+        celsTxt.addActionListener(this);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    public void actionPerformed( ActionEvent evt){
-      
+    public void actionPerformed(ActionEvent evt) {
+
         String userIn = celsTxt.getText();
 
-        try{
+        try {
 
             celsTemp = Integer.parseInt(userIn);
             fahrTemp = convertCtoF(celsTemp);
             fahrTxt.setText(fahrTemp + " F");
-        }catch(Exception ex){
+        } catch (Exception ex) {
 
             fahrTxt.setText("Falsche Eingabe! (Bitte int eingeben)");
         }
@@ -47,7 +47,7 @@ class TemperaturConverter extends JFrame implements ActionListener{
         repaint();
     }
 
-    public int convertCtoF( int C ){
+    public int convertCtoF(int C) {
 
         return (((C * 9) / 5) + 32);
     }

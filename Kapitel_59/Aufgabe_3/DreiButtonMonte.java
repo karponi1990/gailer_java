@@ -3,12 +3,12 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
 
-public class DreiButtonMonte extends JFrame implements ActionListener{
-    
+public class DreiButtonMonte extends JFrame implements ActionListener {
+
     JButton ersterButton, zweiterButton, dritterButton;
     Random rnd = new Random();
 
-    DreiButtonMonte(String titel){
+    DreiButtonMonte(String titel) {
 
         super(titel);
         ersterButton = new JButton("Spiel!");
@@ -28,7 +28,7 @@ public class DreiButtonMonte extends JFrame implements ActionListener{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    public void actionPerformed(ActionEvent evt){
+    public void actionPerformed(ActionEvent evt) {
 
         int zufallszahl = rnd.nextInt(3);
 

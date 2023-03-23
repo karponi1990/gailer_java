@@ -1,16 +1,16 @@
-class Hund extends Haustiere{
-    
-    Hund(String name, double futtervorrat){
+class Hund extends Haustiere {
+
+    Hund(String name, double futtervorrat) {
 
         super(name, futtervorrat);
     }
 
-    public void sprich(){
+    public void sprich() {
 
         System.out.println("Wuff!");
     }
 
-    public void friss(){
+    public void friss() {
 
         System.out.println(name + ": " + futtervorrat);
         futtervorrat -= 1.0;

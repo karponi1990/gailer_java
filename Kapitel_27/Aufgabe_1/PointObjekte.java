@@ -3,7 +3,7 @@ import java.awt.*;
 
 class PointObjekte {
     public static void main(String[] args) {
-        
+
         int x1, x2, y1, y2;
         Point aPoint, bPoint;
 
@@ -18,8 +18,8 @@ class PointObjekte {
         System.out.print("Wert y2: ");
         y2 = scan.nextInt();
 
-        aPoint = new Point(x1,y1);
-        bPoint = new Point(x2,y2);
+        aPoint = new Point(x1, y1);
+        bPoint = new Point(x2, y2);
 
         String aP = aPoint.toString();
         String bP = bPoint.toString();

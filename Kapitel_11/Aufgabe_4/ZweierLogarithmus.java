@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class ZweierLogarithmus {
     public static void main(String[] args) {
-        
+
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Geben Sie ein double ein: ");

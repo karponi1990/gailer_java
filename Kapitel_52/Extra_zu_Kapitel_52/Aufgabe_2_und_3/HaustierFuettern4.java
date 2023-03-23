@@ -1,9 +1,9 @@
 import java.util.Arrays;
 
-class HaustierFuettern4{
-    
+class HaustierFuettern4 {
+
     public static void main(String[] args) {
-        
+
         Haustiere4[] haustier = new Haustiere4[5];
 
         haustier[0] = new Katze4("Minka", 1.0, 1, 3.5);
@@ -14,9 +14,9 @@ class HaustierFuettern4{
 
         Arrays.sort(haustier);
 
-        for(Haustiere4 tier : haustier){
-        
+        for (Haustiere4 tier : haustier) {
+
             tier.fuettern();
-        }    
+        }
     }
 }

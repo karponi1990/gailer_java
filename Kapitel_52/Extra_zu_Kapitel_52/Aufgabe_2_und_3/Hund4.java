@@ -1,12 +1,12 @@
-class Hund4 extends Haustiere4{
-    
+class Hund4 extends Haustiere4 {
+
     String kategorie;
 
-    Hund4(String name, double futtervorrat, int kategorie, double gewicht){
+    Hund4(String name, double futtervorrat, int kategorie, double gewicht) {
 
-        super(name, futtervorrat, gewicht);  
+        super(name, futtervorrat, gewicht);
 
-        switch(kategorie){
+        switch (kategorie) {
             case 1:
                 this.kategorie = "Kleinhunde";
                 break;
@@ -19,15 +19,15 @@ class Hund4 extends Haustiere4{
         }
     }
 
-    public void friss(){
+    public void friss() {
 
-        if(kategorie.equals("Kleinhunde")){
+        if (kategorie.equals("Kleinhunde")) {
             futtervorrat -= 1.0;
-        }else if(kategorie.equals("Mittelgrosse Hunde")){
+        } else if (kategorie.equals("Mittelgrosse Hunde")) {
             futtervorrat -= 1.5;
-        }else{
+        } else {
             futtervorrat -= 2.0;
         }
-        
+
     }
 }

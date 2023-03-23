@@ -23,7 +23,5 @@ class Kaufhaus {
         spiel.anzeigen();
         buech.anzeigen();
 
-
-
     }
 }

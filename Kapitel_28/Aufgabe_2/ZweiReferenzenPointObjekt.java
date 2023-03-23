@@ -2,11 +2,11 @@ import java.awt.*;
 
 class ZweiReferenzenPointObjekt {
     public static void main(String[] args) {
-        
-        Point pt1 = new Point(10,10);
+
+        Point pt1 = new Point(10, 10);
         Point ptAlias = pt1;
 
-        if(pt1 == ptAlias){
+        if (pt1 == ptAlias) {
             System.out.println("pt1 und ptAlias verweisen auf das selbe Objekt!\n");
         }
 

@@ -17,14 +17,14 @@ class TankenVorDeathValley {
         int aktTank = tank * anzeige / 100;
         double restKM = aktTank / verbrauch * 100;
 
-        if(restKM < 200){
+        if (restKM < 200) {
             System.out.println("Tanken!");
             System.out.println("Restreichweite: " + restKM);
-        }else{
+        } else {
             System.out.println("Weiterfahren...");
             System.out.println("Restreichweite: " + restKM);
         }
-        
+
         scan.close();
     }
 }

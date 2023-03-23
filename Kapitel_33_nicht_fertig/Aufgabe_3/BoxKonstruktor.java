@@ -4,49 +4,53 @@ public class BoxKonstruktor {
     private double _laenge;
     private double _hoehe;
 
-    public double getLaenge(){
+    public double getLaenge() {
         return _laenge;
     }
-    public double getHoehe(){
+
+    public double getHoehe() {
         return _hoehe;
     }
-    public double getBreite(){
+
+    public double getBreite() {
         return _breite;
     }
 
-    BoxKonstruktor(BoxKonstruktor alteBox){
+    BoxKonstruktor(BoxKonstruktor alteBox) {
         getBreite();
         getHoehe();
         getLaenge();
     }
 
-    BoxKonstruktor(double breite, double hoehe, double laenge){
+    BoxKonstruktor(double breite, double hoehe, double laenge) {
         this._breite = breite;
         this._hoehe = hoehe;
         this._laenge = laenge;
     }
 
-    BoxKonstruktor(double seite){
+    BoxKonstruktor(double seite) {
         _breite = seite;
         _hoehe = seite;
         _laenge = seite;
     }
 
-    public double berechneVolumen(){
+    public double berechneVolumen() {
         return _breite * _laenge * _hoehe;
     }
 
-    public double berechneOberflaeche(){
-        return 2 * berechneOberflaecheVorn() + 2 * berechneOberflaecheOben() + 2 * berechneOberflaecheSeitlich() ;
+    public double berechneOberflaeche() {
+        return 2 * berechneOberflaecheVorn() + 2 * berechneOberflaecheOben() + 2 * berechneOberflaecheSeitlich();
     }
 
-    private double berechneOberflaecheVorn(){
+    private double berechneOberflaecheVorn() {
         return _breite * _breite;
     }
-    private double berechneOberflaecheOben(){
+
+    private double berechneOberflaecheOben() {
         return _laenge * _laenge;
     }
-    private double berechneOberflaecheSeitlich(){
+
+    private double berechneOberflaecheSeitlich() {
         return _hoehe * _hoehe;
     }
 }

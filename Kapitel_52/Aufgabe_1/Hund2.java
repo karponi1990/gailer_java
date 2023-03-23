@@ -1,12 +1,12 @@
-class Hund2 extends Haustiere2{
-    
+class Hund2 extends Haustiere2 {
+
     String kategorie;
 
-    Hund2(String name, double futtervorrat, int kategorie){
+    Hund2(String name, double futtervorrat, int kategorie) {
 
         super(name, futtervorrat);
 
-        switch(kategorie){
+        switch (kategorie) {
             case 1:
                 this.kategorie = "Kleinhunde";
                 break;
@@ -19,18 +19,19 @@ class Hund2 extends Haustiere2{
         }
     }
 
-    public void sprich(){
+    public void sprich() {
 
         System.out.println("Wuff!");
     }
 
-    public void friss(){
+    public void friss() {
 
         System.out.println(name + ": " + futtervorrat);
         futtervorrat -= 1.0;
     }
 
-    public void anzeigen(){
-        System.out.println("(Kategorie: " + this.kategorie + ") Der Vorrat fuer " + name + " reicht " + anzahlTage + " Tage.\n");
+    public void anzeigen() {
+        System.out.println(
+                "(Kategorie: " + this.kategorie + ") Der Vorrat fuer " + name + " reicht " + anzahlTage + " Tage.\n");
     }
 }

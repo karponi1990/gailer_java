@@ -18,13 +18,13 @@ class FantasySpiel {
         System.out.print("Glueck eingeben (1-10): ");
         int glueck = scan.nextInt();
 
-        if((staerke + gesundheit + glueck) > 15){
+        if ((staerke + gesundheit + glueck) > 15) {
             System.out.println("Sie haben Ihrer Spielfigur zu viele Punkte gegeben!");
             staerke = 5;
             gesundheit = 5;
             glueck = 5;
             System.out.println(name + ", Staerke: " + staerke + ", Gesundheit: " + gesundheit + ", Glueck: " + glueck);
-        }else{
+        } else {
             System.out.println(name + ", Staerke: " + staerke + ", Gesundheit: " + gesundheit + ", Glueck: " + glueck);
         }
 

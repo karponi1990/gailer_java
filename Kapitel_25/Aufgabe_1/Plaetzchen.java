@@ -1,16 +1,16 @@
 class Plaetzchen {
-    
+
     String sorte;
     String groesse;
     String form;
 
-    public void ausgeben(){
+    public void ausgeben() {
 
         System.out.println("Sorte " + sorte + ", Groesse " + groesse + ", Form " + form);
     }
 
     public static void main(String[] args) {
-        
+
         System.out.println("\n+++ Plaetzchenliste +++\n");
 
         Plaetzchen plaetzchen = new Plaetzchen();

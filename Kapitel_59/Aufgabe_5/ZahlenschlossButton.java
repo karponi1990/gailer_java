@@ -2,12 +2,13 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-class ZahlenschlossButton extends JFrame implements ActionListener{
-    
-    JButton nullButton, einsButton, zweiButton, dreiButton, vierButton, fuenfButton, sechsButton, siebenButton, achtButton, neunButton;
+class ZahlenschlossButton extends JFrame implements ActionListener {
+
+    JButton nullButton, einsButton, zweiButton, dreiButton, vierButton, fuenfButton, sechsButton, siebenButton,
+            achtButton, neunButton;
     String code = "";
 
-    ZahlenschlossButton(String titel){
+    ZahlenschlossButton(String titel) {
 
         super(titel);
         nullButton = new JButton("0");
@@ -20,7 +21,6 @@ class ZahlenschlossButton extends JFrame implements ActionListener{
         siebenButton = new JButton("7");
         achtButton = new JButton("8");
         neunButton = new JButton("9");
-
 
         setLayout(new FlowLayout());
 
@@ -46,7 +46,6 @@ class ZahlenschlossButton extends JFrame implements ActionListener{
         achtButton.setActionCommand("8");
         neunButton.setActionCommand("9");
 
-
         nullButton.addActionListener(this);
         einsButton.addActionListener(this);
         zweiButton.addActionListener(this);
@@ -58,21 +57,20 @@ class ZahlenschlossButton extends JFrame implements ActionListener{
         achtButton.addActionListener(this);
         neunButton.addActionListener(this);
 
-
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    public void actionPerformed(ActionEvent evt){
+    public void actionPerformed(ActionEvent evt) {
 
-        if(code.length() < 3){
+        if (code.length() < 3) {
             code = code + evt.getActionCommand();
         }
-        if(code.length() == 3){
-            if(code.equals("735")){
+        if (code.length() == 3) {
+            if (code.equals("735")) {
                 getContentPane().setBackground(Color.green);
                 repaint();
                 code = "";
-            }else{
+            } else {
                 getContentPane().setBackground(Color.red);
                 repaint();
                 code = "";

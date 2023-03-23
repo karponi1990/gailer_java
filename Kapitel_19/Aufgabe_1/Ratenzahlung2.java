@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class Ratenzahlung2 {
     public static void main(String[] args) {
-        
+
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Geben Sie den Anfangssaldo ein: ");
@@ -26,15 +26,14 @@ class Ratenzahlung2 {
                 rate = saldo;
                 saldo = saldo - rate;
                 gesamtbetrag = gesamtbetrag + rate;
-            }else
-            {
+            } else {
                 saldo = saldo - rate;
                 gesamtbetrag = gesamtbetrag + rate;
             }
-        
+
             monat++;
 
-            System.out.println("Monat: " + monat + "\tSaldo: " + saldo +" \tGesamtbetrag: " + gesamtbetrag );
+            System.out.println("Monat: " + monat + "\tSaldo: " + saldo + " \tGesamtbetrag: " + gesamtbetrag);
         }
 
         scan.close();

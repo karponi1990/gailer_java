@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class Y2KProblemDetektor {
     public static void main(String[] args) {
-        
+
         int alter;
 
         Scanner scan = new Scanner(System.in);
@@ -13,9 +13,9 @@ class Y2KProblemDetektor {
         System.out.print("Aktuelles Jahr: ");
         int aktjahr = scan.nextInt();
 
-        if(aktjahr < gebjahr){
+        if (aktjahr < gebjahr) {
             alter = (aktjahr + 100) - gebjahr;
-        }else{
+        } else {
             alter = aktjahr - gebjahr;
         }
 
